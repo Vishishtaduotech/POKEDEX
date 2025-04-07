@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pokedex {
+    background-color: #dc0a0a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    width: 800px;
+    max-width: 95%;
+}
+
+.pokedex-left, .pokedex-right {
+    padding: 20px;
+    flex: 1;
+    color: white;
+}
+
+.pokedex-left {
+    background-color: #333;
+    border-right: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: #333;
+}
+
+.search-bar button {
+    background-color: #ffcb05;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.pokemon-list {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.pokemon-list button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pokemon-list button:hover {
+    background-color: #555;
+}
+
+.pokemon-details {
+    background-color: #eee;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokemon-details h2 {
+    margin-top: 0;
+    color: #dc0a0a;
+}
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.pokemon-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pokemon-stats {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.pokemon-stats p {
+    margin: 5px 0;
+}
+
+.loading {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+.easter-egg {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.easter-egg h2 {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.easter-egg img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
